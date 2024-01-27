@@ -1,0 +1,40 @@
+.container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+/* Navbar Links Group */
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+/* Navbar Links */
+
+.link_container {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.active_link_container {
+  background-color: var(--text);
+  color: var(--bg);
+}
+
+.logout {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
