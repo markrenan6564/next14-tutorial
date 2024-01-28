@@ -11,11 +11,11 @@
 }
 
 .title {
-  font-size: 96px;
+  font-size: clamp(2rem, 10vw, 5rem);
 }
 
 .description {
-  font-size: 20px;
+  font-size: clamp(0.625rem, 5vw, 1.2rem);
 }
 
 .buttons {

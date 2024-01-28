@@ -1,9 +1,13 @@
 .container {
-  height: 100px;
+  min-height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   color: gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
 }
 
 .logo {
@@ -11,5 +15,5 @@
 }
 
 .text {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
