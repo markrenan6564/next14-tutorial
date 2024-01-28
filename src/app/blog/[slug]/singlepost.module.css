@@ -59,5 +59,6 @@
 @media (max-width: 45rem) {
   .single_post_wrapper {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
