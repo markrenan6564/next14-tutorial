@@ -1,34 +1,35 @@
 .container {
-  display: flex;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 4rem;
 }
 
 .text_container {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 3rem;
 }
 
 .title {
-  font-size: clamp(2rem, 10vw, 5rem);
+  font-size: clamp(2rem, 10vw, 4rem);
 }
 
 .description {
-  font-size: clamp(0.625rem, 5vw, 1.2rem);
+  font-size: clamp(0.625rem, 5vw, 1rem);
 }
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .button {
-  padding: 20px;
-  min-width: 120px;
+  padding: 1rem;
+  min-width: 7rem;
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 .button:first-child {
@@ -37,17 +38,28 @@
 }
 
 .brands {
-  position: reFlative;
-  width: 500px;
-  height: 50px;
+  position: relative;
+  min-height: 3rem;
   filter: grayscale(1);
 }
 
+.brand {
+  object-fit: contain;
+}
+
 .image_container {
-  flex: 1;
   position: relative;
 }
 
 .hero_image {
   object-fit: contain;
+}
+
+@media (max-width: 45rem) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .image_container {
+    display: none;
+  }
 }

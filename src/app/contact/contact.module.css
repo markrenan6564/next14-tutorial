@@ -1,21 +1,15 @@
 .container {
-  display: flex;
-  align-items: center;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
 }
 
 .image_container {
-  flex: 1;
-  height: 500px;
   position: relative;
 }
 
 .contact_image {
   object-fit: contain;
-}
-
-.form_container {
-  flex: 1;
 }
 
 .form {
@@ -42,4 +36,13 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 45rem) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .contact_image {
+    display: none;
+  }
 }
